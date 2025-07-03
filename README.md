@@ -36,10 +36,10 @@ It converts modern JavaScript (including arrow functions, template strings, obje
 
 ---
 
-## 🚀 Quick Example
+## 🚀 Quick Example(s)
 
 ```js
-// JavaScript
+// JavaScript input
 function add(a, b) {
     return a + b;
 }
@@ -49,7 +49,7 @@ let y = 10;
 console.log(add(x, y));
 ```
 ```python
-//  Python output
+#  Python output
 def add(a, b):
     return a + b
 
