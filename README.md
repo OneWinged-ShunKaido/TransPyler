@@ -40,79 +40,21 @@ It converts modern JavaScript (including arrow functions, template strings, obje
 
 ```js
 // JavaScript input
-const PI = 3.14159;
-
-function areaCircle(radius) {
-    if (radius <= 0) {
-        return 0;
-    } else if (radius > 10) {
-        return PI * radius * radius * 0.9; // rduction pour gros cercles
-    } else {
-        return PI * radius * radius;
-    }
-}
-
-function checkNumber(num) {
-    if (num === 0) {
-        return "zero";
-    } else if (num > 0) {
-        return "positive";
-    } else {
-        return "negative";
-    }
+function add(a, b) {
+    return a + b;
 }
 
 let x = 5;
 let y = 10;
-
-let result;
-
-if (x > y) {
-    result = areaCircle(x);
-} else if (x === y) {
-    result = areaCircle(y);
-} else {
-    result = areaCircle(x + y);
-}
-
-console.log("Result is:", result);
-console.log("Check x:", checkNumber(x));
-console.log("Check y:", checkNumber(y));
+console.log(add(x, y));
 
 ```
 ```python
 #  Python output
-PI = 3.14159
-
-def areaCircle(radius):
-    if radius <= 0:
-        return 0
-    elif radius > 10:
-        return PI * radius * radius * 0.9
-    else:
-        return PI * radius * radius
-
-def checkNumber(num):
-    if num == 0:
-        return 'zero'
-    elif num > 0:
-        return 'positive'
-    else:
-        return 'negative'
+def add(a, b):
+    return a + b
 
 x = 5
 y = 10
-
-result = None
-
-if x > y:
-    result = areaCircle(x)
-elif x == y:
-    result = areaCircle(y)
-else:
-    result = areaCircle(x + y)
-
-print('Result is:', result)
-print('Check x:', checkNumber(x))
-print('Check y:', checkNumber(y))
+print(add(x, y))
 ```
