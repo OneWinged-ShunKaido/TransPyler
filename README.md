@@ -40,9 +40,20 @@ It converts modern JavaScript (including arrow functions, template strings, obje
 
 ```js
 // JavaScript
-let summary = data.map(dp => `${dp.unit}: ${dp.value.toFixed(2)}`).join(", ");
+function add(a, b) {
+    return a + b;
+}
+
+let x = 5;
+let y = 10;
+console.log(add(x, y));
 ```
 ```python
 //  Python output
-summary = ", ".join([f"{dp.unit}: {round(dp.value, 2)}" for dp in data])
+def add(a, b):
+    return a + b
+
+x = 5
+y = 10
+print(add(x, y))
 ```
